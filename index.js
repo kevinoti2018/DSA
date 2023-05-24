@@ -85,28 +85,6 @@
 
 
 
-// function mostFrequentCharacter(value) {
-//   const charCount = {};
-//   let maxCount = 0;
-//   let mostFrequentChar = '';
-
-//   for (let i = 0; i < value.length; i++) {
-//     const char = value[i];
-//     charCount[char] = (charCount[char] || 0) + 1;
-
-//     if (charCount[char] > maxCount) {
-//       maxCount = charCount[char];
-//       mostFrequentChar = char;
-//     }
-//   }
-
-//   return mostFrequentChar;
-// }
-
-// // Example usage
-// const value = 'jonathann';
-// const mostAppearingChar = mostFrequentCharacter(value);
-// console.log(mostAppearingChar);  // Output: '1'
 
 
 
@@ -137,49 +115,35 @@
 
 
 
-// function frequentCharacter(value) {
-//   let stringValue = value.toString(); // Convert value to string
+function frequentCharacter(value) {
+  let stringValue = value.toString(); // Convert value to string
 
-//   let charCount = {};
-//   let maximumCount = 0;
-//   let frequentChar = '';
+  let charCount = {};
+  let maximumCount = 0;
+  let frequentChar = '';
 
-//   for (let char of stringValue) {
-//     if (charCount[char]) {
-//       charCount[char]++;
-//     } else {
-//       charCount[char] = 1;
-//     }
+  for (let char of stringValue) {
+    if (charCount[char]) {
+      charCount[char]++;
+    } else {
+      charCount[char] = 1;
+    }
 
-//     if (charCount[char] > maximumCount) {
-//       maximumCount = charCount[char];
-//       frequentChar = char;
-//     }
-//   }
+    if (charCount[char] > maximumCount) {
+      maximumCount = charCount[char];
+      frequentChar = char;
+    }
+  }
 
-//   return frequentChar;
-// }
-
-// let value = "1118888";
-// let mostAppearingChar = frequentCharacter(value);
-// console.log(mostAppearingChar);
-
-
-
-
-
-function capitalizeWords(sentence) {
-  let words = sentence.split(" ");  // Split the sentence into individual words
-  let capitalizedWords = words.map(function(word) {
-    return word.charAt(0).toUpperCase() + word.slice(1);
-  });  // Capitalize the first letter of each word
-  
-  return capitalizedWords.join(" ");  // Join the words back into a sentence
+  return frequentChar;
 }
 
-// Example usage:
-let result = capitalizeWords("hello there");
-console.log(result);  // Output: "Hello There"
+let value = "1118888";
+let mostAppearingChar = frequentCharacter(value);
+console.log(mostAppearingChar);
 
-result = capitalizeWords("hi");
-console.log(result);  // Output: "Hi"
+
+
+
+
+
