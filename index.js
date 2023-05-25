@@ -1,23 +1,23 @@
-// function reverseString(string){
-//      const newstr = string.split('')
+function reverseString(string){
+     const newstr = string.split('')
 
-//      let reversedString =""
-//     for(let i=newstr.length-1; i>=0 ;i--){
-//          reversedString += newstr[i] 
-//     }
-//     return reversedString
-// }
-// console.log (reverseString('rookie'))
+     let reversedString =""
+    for(let i=newstr.length-1; i>=0 ;i--){
+         reversedString += newstr[i] 
+    }
+    return reversedString
+}
+console.log (reverseString('rookie'))
 
 
-function reverseInteger(num) {
-     const reversedString = Math.abs(num).toString().split('').reverse().join('');
-     const reversedNum = parseInt(reversedString, 10);
+// function reverseInteger(num) {
+//      const reversedString = Math.abs(num).toString().split('').reverse().join('');
+//      const reversedNum = parseInt(reversedString, 10);
      
-     return num < 0 ? -reversedNum : reversedNum;
-   }
+//      return num < 0 ? -reversedNum : reversedNum;
+//    }
    
-   console.log(reverseInteger(-84))
+//    console.log(reverseInteger(-84))
 
 
 
