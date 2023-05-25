@@ -68,19 +68,19 @@
 //Given an array and chunk size divide the array into many subarrays where each subarray  length is the chunk size.
 
 
-// function chunkyArray(arr, chunk){
-//   const chunks =[]
-//   for(let i=0;i<=arr.length;i+= chunk){
-//     chunks.push(arr.slice(i,i+ chunk))
-//   }
-//   return chunks
+function chunkyArray(arr, chunk){
+  const chunks =[]
+  for(let i=0;i<=arr.length;i+= chunk){
+    chunks.push(arr.slice(i,i+ chunk))
+  }
+  return chunks
 
-// }
+}
 
-// const array1 = [1, 2, 3, 3, 4, 5, 6, 7];
-// const chunkSize1 = 3;
-// const result1 = chunkyArray(array1, chunkSize1);
-// console.log(result1)
+const array1 = [];
+const chunkSize1 = 3;
+const result1 = chunkyArray(array1, chunkSize1);
+console.log(result1)
 
 
 
@@ -115,32 +115,32 @@
 
 
 
-function frequentCharacter(value) {
-  let stringValue = value.toString(); // Convert value to string
+// function frequentCharacter(value) {
+//   let stringValue = value.toString(); // Convert value to string
 
-  let charCount = {};
-  let maximumCount = 0;
-  let frequentChar = '';
+//   let charCount = {};
+//   let maximumCount = 0;
+//   let frequentChar = '';
 
-  for (let char of stringValue) {
-    if (charCount[char]) {
-      charCount[char]++;
-    } else {
-      charCount[char] = 1;
-    }
+//   for (let char of stringValue) {
+//     if (charCount[char]) {
+//       charCount[char]++;
+//     } else {
+//       charCount[char] = 1;
+//     }
 
-    if (charCount[char] > maximumCount) {
-      maximumCount = charCount[char];
-      frequentChar = char;
-    }
-  }
+//     if (charCount[char] > maximumCount) {
+//       maximumCount = charCount[char];
+//       frequentChar = char;
+//     }
+//   }
 
-  return frequentChar;
-}
+//   return frequentChar;
+// }
 
-let value = "1118888";
-let mostAppearingChar = frequentCharacter(value);
-console.log(mostAppearingChar);
+// let value = "1118888";
+// let mostAppearingChar = frequentCharacter(value);
+// console.log(mostAppearingChar);
 
 
 
