@@ -10,14 +10,14 @@
 // console.log (reverseString('rookie'))
 
 
-// function reverseInteger(num) {
-//      const reversedString = Math.abs(num).toString().split('').reverse().join('');
-//      const reversedNum = parseInt(reversedString, 10);
+function reverseInteger(num) {
+     const reversedString = Math.abs(num).toString().split('').reverse().join('');
+     const reversedNum = parseInt(reversedString, 10);
      
-//      return num < 0 ? -reversedNum : reversedNum;
-//    }
+     return num < 0 ? -reversedNum : reversedNum;
+   }
    
-//    console.log(reverseInteger(8))
+   console.log(reverseInteger(-84))
 
 
 
@@ -68,19 +68,19 @@
 //Given an array and chunk size divide the array into many subarrays where each subarray  length is the chunk size.
 
 
-function chunkyArray(arr, chunk){
-  const chunks =[]
-  for(let i=0;i<=arr.length;i+= chunk){
-    chunks.push(arr.slice(i,i+ chunk))
-  }
-  return chunks
+// function chunkyArray(arr, chunk){
+//   const chunks =[]
+//   for(let i=0;i<=arr.length;i+= chunk){
+//     chunks.push(arr.slice(i,i+ chunk))
+//   }
+//   return chunks
 
-}
+// }
 
-const array1 = [];
-const chunkSize1 = 3;
-const result1 = chunkyArray(array1, chunkSize1);
-console.log(result1)
+// const array1 = [];
+// const chunkSize1 = 3;
+// const result1 = chunkyArray(array1, chunkSize1);
+// console.log(result1)
 
 
 

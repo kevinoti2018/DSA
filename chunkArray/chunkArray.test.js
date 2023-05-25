@@ -5,7 +5,7 @@ describe('chunkArray',()=>{
         const result = chunkArray([1, 2, 3, 3, 4, 5, 6, 7],3);
         expect(result).toEqual([ [ 1, 2, 3 ], [ 3, 4, 5 ], [ 6, 7 ] ]);
       });
-    test(' to  Equal ', () => {
+    test(' to  Equal  ', () => {
         const result = chunkArray([1, 2, 3, 3],3);
         expect(result).toEqual([ [ 1, 2, 3 ], [3] ]);
       });
