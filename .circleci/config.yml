@@ -1,0 +1,19 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.1.0
+  codecov: codecov/codecov@3.2.4
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:18.16
+    - checkout
+    - node/install-packages:
+          pkg-manager: npm
+    - codecov/upload:
+          file: ./coverage/clover.xml
+
+workflows:
+  install_and_test:
+    jobs:
+      - test
