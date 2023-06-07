@@ -13,7 +13,7 @@ describe('pattern',()=>{
     //     expect(pattern(num)).toEqual(expectedOutput);
     //   });
     test('should generate the correct pattern for a larger positive number', () => {
-        const num = 10;
+        const num = -10;
         const expectedOutput = [
           '##########',
           ' #########',
