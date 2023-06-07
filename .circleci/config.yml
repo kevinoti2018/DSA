@@ -11,6 +11,9 @@ jobs:
       - checkout
       - node/install-packages:
             pkg-manager: npm
+      - run:
+          name: Run DSA tests
+          command: npm test
       - codecov/upload:
             file: ./coverage/clover.xml
 
